@@ -46,8 +46,8 @@ const Page = () => {
           </h1>
           <h2 className="mx-auto w-full px-[40px] mt-12 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
             Dive into a world of insights, stories, and inspiration. Our blog is
-            where ideas meet clarity — whether you're seeking knowledge, tips,
-            or just a fresh perspective, you're in the right place. Explore the
+            where ideas meet clarity — whether you are seeking knowledge, tips,
+            or just a fresh perspective, you are in the right place. Explore the
             latest posts and let your curiosity lead the way.
           </h2>
         </div>
