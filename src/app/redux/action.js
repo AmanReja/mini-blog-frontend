@@ -1,5 +1,5 @@
 "use client";
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://mini-blog-backend-id2o.onrender.com";
 import Swal from "sweetalert2";
 
 export const ADD_POST = "ADD_POST";
