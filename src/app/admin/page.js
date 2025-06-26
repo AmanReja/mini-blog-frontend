@@ -97,7 +97,7 @@ const Page = () => {
       <div className="flex w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r min-h-[100vh] h-auto from-green-50/50 via-teal-50 to-green-50/50">
         <div className="flex flex-col gap-[10px]">
           <div className="w-[800px] h-[200px] px-[40px] pt-[50px]">
-            <h1 className="sm:text-5xl text-3xl w-full sm:text-justify text-center sm:px-0 px-[220px] font-bold font-display text-black ">
+            <h1 className="sm:text-5xl text-3xl w-full text-center sm:px-0 px-[220px] font-bold font-display text-black ">
               Welcome To Admin page{" "}
               <span
                 style={{ fontFamily: "montserrat" }}
