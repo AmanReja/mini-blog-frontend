@@ -77,7 +77,9 @@ const Page = () => {
                       key={index}
                       className=" shadow-2xl bg-gray-900 rounded-2xl p-4 w-[400px] mb-2 "
                     >
-                      <p className="text-white">{post.createdAt}</p>
+                      <p className="text-white">
+                        {new Date(post.createdAt).toLocaleDateString("en-CA")}
+                      </p>
                       <h3
                         style={{ fontFamily: "playfear display" }}
                         className="font-bold text-3xl px-[50px] text-white"
