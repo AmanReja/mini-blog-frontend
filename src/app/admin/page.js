@@ -155,6 +155,7 @@ const Page = () => {
               </label>
 
               <input
+                require
                 value={title}
                 onChange={(e) => {
                   setTitle(e.target.value);
@@ -173,6 +174,7 @@ const Page = () => {
                 Post Content
               </label>
               <textarea
+                require
                 value={content}
                 onChange={(e) => {
                   setContent(e.target.value);
