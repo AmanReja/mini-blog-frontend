@@ -94,10 +94,10 @@ const Page = () => {
 
   return (
     <>
-      <div className="flex w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r min-h-[100vh] h-auto from-green-50/50 via-teal-50 to-green-50/50 dark:from-gray-800 dark:via-gray-700 dark:to-gray-800">
+      <div className="flex w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r min-h-[100vh] h-auto from-green-50/50 via-teal-50 to-green-50/50">
         <div className="flex flex-col gap-[10px]">
           <div className="w-[800px] h-[200px] px-[40px] pt-[50px]">
-            <h1 className="sm:text-5xl text-3xl w-full sm:text-justify text-center sm:px-0 px-[220px] font-bold font-display ">
+            <h1 className="sm:text-5xl text-3xl w-full sm:text-justify text-center sm:px-0 px-[220px] font-bold font-display text-black ">
               Welcome To Admin page{" "}
               <span
                 style={{ fontFamily: "montserrat" }}
@@ -218,15 +218,17 @@ const Page = () => {
                   key={index}
                   className=" shadow-2xl bg-gray-900 rounded-2xl p-4 w-[400px] mb-2 "
                 >
-                  <p>{post.createdAt}</p>
-                  <h3 className="font-bold text-3xl">{post.title}</h3>
-                  <p>{post.content}</p>
+                  <p className="text-white">{post.createdAt}</p>
+                  <h3 className="font-bold text-3xl text-white">
+                    {post.title}
+                  </h3>
+                  <p className="text-white">{post.content}</p>
                   <div className="w-full h-[80px] px-[20px]  flex justify-evenly items-center">
                     <button
                       onClick={(e) => {
                         update(post);
                       }}
-                      className="bg-orange-500 px-[20px] py-[10px] rounded-full"
+                      className="bg-orange-500 px-[20px] py-[10px] text-white rounded-full"
                     >
                       PUDATE
                     </button>
@@ -234,7 +236,7 @@ const Page = () => {
                       onClick={(e) => {
                         handeldelete(post);
                       }}
-                      className="bg-red-500 px-[20px] py-[10px] rounded-full"
+                      className="bg-red-500 px-[20px] py-[10px] text-white rounded-full"
                     >
                       DELETE
                     </button>
