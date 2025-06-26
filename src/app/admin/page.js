@@ -54,6 +54,8 @@ const Page = () => {
   };
 
   const handelupdate = async (e) => {
+    e.preventDefault();
+
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -65,8 +67,6 @@ const Page = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         try {
-          e.preventDefault();
-
           const updatedcontent = {
             title: title,
             content: content,
