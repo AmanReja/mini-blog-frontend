@@ -115,7 +115,7 @@ const Page = () => {
             onClick={() => {
               handleopen();
             }}
-            className="text w-[200px] h-[50px] bg-orange-500 rounded-[12px] "
+            className="text w-[200px] h-[50px] text-white bg-orange-500 rounded-[12px] "
           >
             Create Posts
           </button>
