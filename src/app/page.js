@@ -75,24 +75,24 @@ const Page = () => {
                   {posts.map((post, index) => (
                     <div
                       key={index}
-                      className=" shadow-2xl  from-green-50/50 via-teal-50 to-green-50/50 rounded-2xl p-4 w-[400px] mb-2 "
+                      className=" shadow-2xl bg-gray-900 rounded-2xl p-4 w-[400px] mb-2 "
                     >
                       <p>{post.createdAt}</p>
                       <h3
                         style={{ fontFamily: "playfear display" }}
-                        className="font-bold text-3xl px-[50px]"
+                        className="font-bold text-3xl px-[50px] text-white"
                       >
                         {post.title}
                       </h3>
                       <p
                         style={{ fontFamily: "montserrat" }}
-                        className="font-light"
+                        className="font-light text-white"
                       >
                         {post.content}
                       </p>
                       <div className="w-full h-[80px] px-[20px]  flex justify-evenly items-center">
                         <Link href={`/posts/${post._id}`}>
-                          <button className="bg-orange-500 px-[20px] py-[10px] rounded-full">
+                          <button className="bg-orange-500 text-white px-[20px] py-[10px] rounded-full">
                             View details
                           </button>
                         </Link>
@@ -102,7 +102,7 @@ const Page = () => {
                 </div>
               </div>
             ) : (
-              <p className="mt-10  text-white">No posts found.</p>
+              <p className="mt-10  text-black">No posts found.</p>
             )}
           </div>
         )}
