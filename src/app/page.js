@@ -25,7 +25,7 @@ const Page = () => {
   }, [dispatch]);
   return (
     <>
-      <div className="flex w-full flex-col items-center  justify-center text-center py-20 bg-gradient-to-r h-auto min-h-[100vh] from-green-50/50 via-teal-50 to-green-50/50  dark:from-gray-800 dark:via-gray-700 dark:to-gray-800">
+      <div className="flex w-full flex-col items-center  justify-center text-center py-20 bg-gradient-to-r h-auto min-h-[100vh] from-green-50/50 via-teal-50 to-green-50/50 ">
         <div className="flex sm:px-[40px] px-[20px]  flex-col gap-[10px] h-[400px] mt-[20px]">
           <h1 className="sm:w-full sm:px-[20px] px-[60px] w-full  text-center font-display text-3xl font-bold tracking-normal text-white-300  sm:text-7xl">
             Welcome To Myblog Here
@@ -54,11 +54,11 @@ const Page = () => {
 
         <div className="w-[400px] h-[100px] flex justify-evenly px-[10px] mt-[30px] items-centers">
           <Link href="/admin">
-            <button className="text w-[150px] h-[50px] bg-black rounded-[12px] ">
+            <button className="text w-[150px] h-[50px] text-white bg-black rounded-[12px] ">
               Admin
             </button>
           </Link>
-          <button className="text w-[100px] h-[50px] bg-orange-500 rounded-[12px] ">
+          <button className="text w-[100px] h-[50px] text-white bg-orange-500 rounded-[12px] ">
             User
           </button>
         </div>
