@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { addPost, getAllpost, deletePost, updatePost } from "../redux/action";
 import "../App.css";
 
-const page = () => {
+const Page = () => {
   const posts = useSelector((state) => state.posts.posts);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
@@ -251,4 +251,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

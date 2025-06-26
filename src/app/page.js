@@ -5,7 +5,7 @@ import { getAllpost } from "./redux/action";
 import Link from "next/link";
 import "./App.css";
 
-const page = () => {
+const Page = () => {
   const [load, setLoad] = useState(false);
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts.posts);
@@ -111,4 +111,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
