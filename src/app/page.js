@@ -68,14 +68,14 @@ const Page = () => {
           <div className="w-full px-[5px]">
             {posts.length > 0 ? (
               <div className="w-full h-auto flex flex-col justify-center items-center">
-                <h2 className="text-2xl font-bold mb-4 text-white">
+                <h2 className="text-2xl font-bold mb-4 text-black">
                   All Posts
                 </h2>
                 <div className="w-full h-full flex flex-wrap px-[10px] justify-center gap-[10px] items-center">
                   {posts.map((post, index) => (
                     <div
                       key={index}
-                      className=" shadow-2xl bg-gray-900 rounded-2xl p-4 w-[400px] mb-2 "
+                      className=" shadow-2xl  from-green-50/50 via-teal-50 to-green-50/50 rounded-2xl p-4 w-[400px] mb-2 "
                     >
                       <p>{post.createdAt}</p>
                       <h3
