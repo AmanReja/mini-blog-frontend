@@ -54,26 +54,38 @@ const Page = () => {
   };
 
   const handelupdate = async (e) => {
-    try {
-      e.preventDefault();
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        try {
+          e.preventDefault();
 
-      const updatedcontent = {
-        title: title,
-        content: content,
-      };
+          const updatedcontent = {
+            title: title,
+            content: content,
+          };
 
-      dispatch(updatePost(updatedcontent, currentid)).then(() => {
-        dispatch(getAllpost());
-      });
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setTitle("");
-      setContent("");
-      setIsedit(false);
-      setCurrentid(null);
-      setOpen(false);
-    }
+          dispatch(updatePost(updatedcontent, currentid)).then(() => {
+            dispatch(getAllpost());
+          });
+        } catch (error) {
+          console.error(error);
+        } finally {
+          setTitle("");
+          setContent("");
+          setIsedit(false);
+          setCurrentid(null);
+          setOpen(false);
+        }
+      }
+    });
   };
 
   const handelpostes = (e) => {
