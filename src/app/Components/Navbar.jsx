@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <div className="flex shrink-0">
               <a aria-current="page" className="flex items-center" href="/">
-                <h1 className="text-black">Myblog</h1>
+                <h1 className="text-black text-[21px] font-bold">Myblog</h1>
               </a>
             </div>
 
