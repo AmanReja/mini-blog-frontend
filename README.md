@@ -34,4 +34,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
 # mini-blog-frontend
+
+src/
+└── app/
+├── admin/ # Admin dashboard to create, update, delete posts
+│ └── page.js
+├── Components/ # Reusable UI components like Navbar
+│ └── Navbar.jsx
+├── posts/ # Dynamic routing for viewing individual posts
+│ └── [id]/  
+ │ └── page.js
+├── redux/ # Redux store configuration
+│ ├── action.js # Contains action creators for CRUD operations
+│ ├── reducer.js # Reducer to manage state
+│ └── store.js # Redux store setup
+├── App.css # Custom styles
+├── favicon.ico # App favicon
+├── globals.css # Global styles (Tailwind base if used)
+├── layout.js # Root layout (Next.js App Router)
+├── page.js # Homepage that lists all blog posts
+└── Providerredux.js # Redux provider to wrap the application
