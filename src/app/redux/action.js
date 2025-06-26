@@ -18,7 +18,7 @@ export const getAllpost = () => async (dispatch) => {
     dispatch({ type: "GETALL_POST", payload: data });
   } catch (error) {
     console.error("Error fetching posts:", error);
-    alert("Failed to fetch posts");
+    // alert("Failed to fetch posts");
   }
 };
 
