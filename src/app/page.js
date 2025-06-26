@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getAllpost } from "./redux/action";
 import Link from "next/link";
 import "./App.css";
+import Swal from "sweetalert2";
 
 const Page = () => {
   const [load, setLoad] = useState(false);
@@ -58,7 +59,16 @@ const Page = () => {
               Admin
             </button>
           </Link>
-          <button className="text w-[100px] h-[50px] text-white bg-orange-500 rounded-[12px] ">
+          <button
+            onClick={() => {
+              Swal.fire({
+                title: "User Auth Comming Soon",
+
+                icon: "warning",
+              });
+            }}
+            className="text w-[100px] h-[50px] text-white bg-orange-500 rounded-[12px] "
+          >
             User
           </button>
         </div>
