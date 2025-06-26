@@ -44,7 +44,7 @@ const Page = () => {
               <span className="relative">Latest Blog</span>
             </span>
           </h1>
-          <h2 className="mx-auto w-full px-[40px] mt-12 max-w-xl text-lg sm:text-white-400 text-white-500 dark:text-gray-300 leading-7">
+          <h2 className="mx-auto w-full px-[40px] mt-12 max-w-xl text-lg text-black text-white-500  leading-7">
             Dive into a world of insights, stories, and inspiration. Our blog is
             where ideas meet clarity — whether you are seeking knowledge, tips,
             or just a fresh perspective, you are in the right place. Explore the
